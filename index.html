@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet">
+    <title>Comparador de Seguidores Instagram</title>
+</head>
+
+<body>
+    <script src="/comparer.js"></script>
+    <h2>Cargar archivos JSON</h2>
+    <div id="dropAreaFollowers" class="drop-area">
+        <p id="followerstext">Arrastra y suelta aquí el archivo de Followers o haz clic para seleccionar</p>
+        <input type="file" id="followersInput" accept=".json" hidden>
+    </div>
+    <div id="dropAreaFollowing" class="drop-area">
+        <p id="followingtext">Arrastra y suelta aquí el archivo de Following o haz clic para seleccionar</p>
+        <input type="file" id="followingInput" accept=".json" hidden>
+    </div>
+
+    <button onclick="compareFollowers()">Comparar</button>
+    <h3>Usuarios que no te siguen de vuelta: <b id="nofolownum">?/?</b></h3>
+    <button id="downloadButton" style="display:none;" onclick="downloadResult()">Descargar Resultado</button>
+    <ul id="notFollowingBackList"></ul>
+
+</body>
+
+</html>

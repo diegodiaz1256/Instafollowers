@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+h2,
+h3 {
+  color: #333;
+}
+input[type="file"] {
+  margin: 10px 0;
+}
+button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+button:hover {
+  background-color: #005f73;
+}
+#notFollowingBackList {
+  list-style-type: none;
+  padding: 0;
+}
+#notFollowingBackList li {
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Eliminar espacio extra entre elementos li */
+}
+.drop-area {
+  background-color: #f9f9f9;
+  border: 2px dashed #c3c3c3;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.drop-area:hover .drop-area.dragover {
+  background-color: #e8e8e8;
+}
+
+p {
+  margin-top: 0;
+  font-weight: bold;
+}
